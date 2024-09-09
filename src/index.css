@@ -1,38 +1,58 @@
 /* Reset CSS */
 *{
     margin: 0;
+    padding: 0;
     top: 0;
     box-sizing: border-box;
     font-style: normal;
     text-decoration: none;
     color: black;
+    font-family: "Roboto", sans-serif;
+} 
+
+:root {
+  --fundo: #f6f6f6;
+  --text: #ffff;
+  --principal: #0060b1;
+  --butons: #fd0505;
+  --txt: #ffffff3d;
 }
 
 .box {
     max-width: 100%;
     margin: 0 auto;
 }
+.flex{
+  display: flex;
+}
 
 /* CSS Header */
 header {
     padding: 0px 4%;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px var(--txt);
+    background-color: var(--fundo)
 }
 header ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 3rem;
     cursor: pointer;
+    transition: .2s;
+
+}
+header ul li:hover{
+  color: var(--principal);
+  scale: 1.05;
 }
 header>.box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 3rem;
 }
 .submit-lente {
     position:absolute;
-    top:7px; right:4px;
+    top:.5rem; right:1rem;
     z-index:10;
     border:none;
     background:transparent;
@@ -41,7 +61,7 @@ header>.box {
   }
   .submit-line {
     position: relative;
-    width: 200px;
+    width: 25rem;
     
   }
   .submit-line input {
@@ -53,5 +73,26 @@ header>.box {
     font-size: 2rem;
   }
   .box a span{
-    color: blue;
+    color: var(--principal)
+  }
+
+
+  /* Css Cards */
+  section .best_products{
+    padding: 0px 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2.titulo {
+    color: var(--text);
+    font-size: 38px;
+    text-align: center;
+
+}
+  section .best_products .box .flex .card{
+    display: flex;
+    justify-content: center;
+
   }
