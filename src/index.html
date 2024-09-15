@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StoreTech</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/bd434ca475.js"
       crossorigin="anonymous"
@@ -13,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <header>
@@ -39,31 +46,102 @@
     </header>
     <main>
       <section class="best_products">
-        <div class="box">
-          <h2 class="titulo"> Nossos Melhores Produtos</h2>
-          <div class="flex">
-            <div class="card">
-              <h2>Notebook Dell </h2>
-              <img
-                src="assets/images/products/product-2.png"
-                alt=""
-                class="product"
-              />
-              <button>comprar</button>
-            </div>
-            <div class="card">
-              <h2>Notebook Dell </h2>
-              <img
-                src="assets/images/products/product-2.png"
-                alt=""
-                class="product"
-              />
-              <button>comprar</button>
-            </div>
+        <h2 class="titulo">Discover our products</h2>
+        <div class="container">
+          <div class="card">
+            <h2>Notebooks</h2>
+            <img
+              src="assets/images/products/product-2-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+
+          <div class="card">
+            <h2>Accessories</h2>
+            <img
+              src="assets/images/products/product-4-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Video cards</h2>
+            <img
+              src="assets/images/products/product-5-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Controls</h2>
+            <img
+              src="assets/images/products/product-6-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Gaming chairs</h2>
+            <img
+              src="assets/images/products/product-7-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Phones</h2>
+            <img
+              src="assets/images/products/product-9-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Gadgtes</h2>
+            <img
+              src="assets/images/products/product-10-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+          <div class="card">
+            <h2>Consoles</h2>
+            <img
+              src="assets/images/products/product-12-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
+          </div>
+        
+          <div class="card">
+            <h2>Machines</h2>
+            <img
+              src="assets/images/products/product-15-removebg-preview.png"
+              alt=""
+              class="product"
+            />
+            <button>See More...</button>
           </div>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
